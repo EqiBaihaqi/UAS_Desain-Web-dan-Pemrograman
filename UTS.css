@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+#container {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#logo {
+    width: 120px;
+    line-height: 80px;
+}
+
+#navigasi {
+    background-color: #2c3333;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    display: flex;
+    position: fixed;
+    width: 200%;
+    height: 45px;
+    opacity: 0.95;
+    top: 0;
+    transition: top 0.7s;
+    z-index: 1000;
+}
+
+#nav1 {
+    display: flex;
+
+}
+
+#mainmenu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+#menu {
+    padding-left: 120px;
+    display: flex;
+    padding-top: 15px;
+}
+
+#mainmenu li {
+    list-style-type: none;
+    padding-left: 60px;
+}
+
+#mainmenu a {
+    display: block;
+    text-decoration: none;
+    color: #e7f6f2;
+    font-size: 20px;
+
+}
+
+p.hov:hover,
+p.hov:active {
+    color: crimson;
+}
+
+#isihome {
+    height: 750px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-image: url(barber1.jpg);
+    background-size: cover;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+    padding-left: 60px;
+}
+
+#firstbrand {
+    color: #BFD0CA;
+    font-weight: 700;
+}
+
+#secondbrand {
+    color: #e9b666;
+    font-weight: 400;
+    padding-left: 4px;
+    padding-right: 10px;
+}
+
+#homekiri {
+    display: flex;
+    width: 800px;
+}
+
+#homekanan {
+    width: max-content;
+    display: flex;
+}
+
+#texthome {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#texthome h1 {
+    text-align: justify;
+    color: #f4c095;
+    font-size: 68px;
+    padding-bottom: 10px;
+}
+
+#texthome p {
+    padding-top: 15px;
+    text-align: justify;
+    color: #f4c095;
+    font-size: 25px;
+}
+
+#gambar1 {
+    padding: 30px;
+    border-radius: 15%;
+}
+
+#isiservice {
+    background-color: #f8f8ff;
+    padding-bottom: 30px;
+}
+
+#headserv {
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 25px;
+    color: #000;
+}
+
+#serv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    padding-top: 9px;
+
+}
+
+#icon {
+    width: 100px;
+    padding-bottom: 7px;
+}
+
+#serv li {
+    list-style-type: none;
+}
+
+#servkiri {
+    padding: 30px;
+}
+
+#servkanan {
+    padding: 30px;
+}
+
+#isiabout {
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: baseline;
+    height: 750px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#gambar2 {
+    padding-left: 30px;
+    border-radius: 10%;
+}
+
+.isianabout {
+    color: #a5b2b5;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 25px;
+}
+
+.isianabout p {
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+
+#isiproduct {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    scroll-behavior: smooth;
+
+}
+
+#isiproduct h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+}
+
+#isiproduct h2 {
+    padding-top: 12px;
+}
+
+#isiproduct p {
+    padding-top: 4px;
+}
+
+.isi-product {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+#product {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.isian-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    position: relative;
+    padding-left: 40px;
+}
+
+#isiproduct::-webkit-scrollbar {
+    display: none;
+}
+
+#slide {
+    width: 400px;
+}
+
+#product-info {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+ul {
+    list-style-type: none;
+    }
+
+    
+@media (max-width: 765px) {
+    .brand {
+        display: flex;
+        padding-left: 300px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #texthome h1 {
+        font-size: 60px;
+    }
+
+    #texthome p {
+        font-size: 25px;
+    }
+
+    #gambar1 {
+        display: none;
+    }
+
+
+    #gambar2 {
+        display: none;
+    }
+
+
+    #icon2 {
+        font-size: 35px;
+    }
+
+    #atas-reserv {
+        padding-top: 100px;
+    }
+
+    #isi-atas {
+        padding-left: 10px;
+
+    }
+
+    #namem {
+        padding-bottom: 100px;
+    }
+
+    label {
+        font-size: 30px;
+    }
+
+    input {
+        height: 19px;
+        width: 100px;
+    }
+
+    #peno {
+        padding-bottom: 35px;
+    }
+
+    button {
+        width: 85px;
+        height: 35px;
+    }
+
+    #bawah-reserv {
+        padding-top: 220px;
+    }
+
+    #bawah-reserv i {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .brand {
+        display: flex;
+        padding-left: 150px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #texthome h1, #texthome p{
+        text-align: center;
+    }
+
+
+    #serv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #servkanan{
+        padding-top: 0%;
+    }
+
+    .isianabout{
+        padding-top: 10px;
+    }
+
+    .isianabout h1{
+        font-size: 40px;
+    }
+
+    .isianabout p{
+        font-size: 20px;
+    }
+
+    #isi-atas{
+        padding-bottom: 0%;
+    }
+
+    #namem{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #peno{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    #bawah-reserv{
+        padding-top: 50px;
+    }
+}
